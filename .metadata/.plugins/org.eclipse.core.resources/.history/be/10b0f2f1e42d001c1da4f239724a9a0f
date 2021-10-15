@@ -15,7 +15,7 @@ private String directoryPath="C:\\Users\\Akshata Naik\\Desktop\\Testing";
 	
 		File file=new File(directoryPath);
 		String fileList[]=file.list();
-		if(fileList.length==0) {
+		if(fileList==null) {
 			System.out.println("No files found");
 		}
 		else

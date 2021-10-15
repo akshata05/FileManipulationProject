@@ -74,3 +74,6 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.robotframework.ide.eclipse.main.plugin 1 0 2021-10-15 14:47:41.110
 !MESSAGE RED plugin started, version: 0.9.5.202007240959
+
+!ENTRY org.eclipse.ui 4 4 2021-10-15 23:32:39.339
+!MESSAGE Plug-in 'org.eclipse.egit.ui' contributed an invalid Menu Extension (Path: 'org.eclipse.search.menu' is invalid): org.eclipse.egit.ui.actions.OpenCommitSearchPage

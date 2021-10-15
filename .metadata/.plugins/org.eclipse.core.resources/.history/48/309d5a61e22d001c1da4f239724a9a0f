@@ -39,7 +39,6 @@ System.out.println("3 Exit Application");
 			
 			switch(option) {
 			case 1:	
-				System.out.println("Files in directory are");
 				fileManipulation.ListFiles();
 				MainMenu();
 				break;
