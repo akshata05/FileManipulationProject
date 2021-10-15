@@ -1,0 +1,16 @@
+package com.LockedMe;
+
+public class FileManipulation {
+
+private String directoryPath="C:\\Users\\Akshata Naik\\Desktop\\Testing";
+	public void ListFiles() {
+		// TODO Auto-generated method stub
+		File
+	}
+
+	public void PerformOperation(int subOption) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

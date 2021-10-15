@@ -1,0 +1,28 @@
+package com.LockedMe;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Arrays;
+
+public class FileManipulation {
+
+private String directoryPath="C:\\Users\\Akshata Naik\\Desktop\\Testing";
+	public void ListFiles(){
+		// TODO Auto-generated method stub
+	
+		File file=new File(directoryPath);
+		String fileList[]=file.list();
+		Arrays.sort(fileList);
+		for(String names:fileList) {
+			System.out.println(names);
+		}
+		
+	}
+
+	public void PerformOperation(int subOption) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

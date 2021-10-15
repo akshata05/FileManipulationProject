@@ -1,0 +1,70 @@
+package com.LockedMe;
+
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+public class MainApplication {
+
+	// Implementation
+
+	public static void main(String[] args) {
+	
+		// TODO Auto-generated method stub
+System.out.println("-----Welcome To LockedMe---");
+System.out.println("By Akshata Naik");
+Scanner s=new Scanner(System.in);
+FileManipulation fileManipulation=new FileManipulation();
+boolean exit=false;
+
+while(!exit) {	
+	MainMenu();
+	try {
+	int option=s.nextInt();
+	switch(option) {
+	case 1:	
+		fileManipulation.ListFiles();
+		break;
+		
+	case 2:
+		SubMenu();
+		try {
+		int subOption=s.nextInt();
+		fileManipulation.PerformOperation(subOption);
+		}
+		catch(NumberFormatException e) {
+			System.err.println("You have choosen invalid option. Please try again");
+		}
+		break;	
+	case 3:
+		exit=true;
+		System.out.println("Exited the Application");
+		break;
+	default:
+		System.err.println("You have choosen invalid option. Please try again");
+		break;
+		
+	}
+	}
+	catch(NumberFormatException e) {
+		System.err.println("You have choosen invalid option. Please try again");
+	}
+}
+
+	}
+	
+	public static void MainMenu() {
+		System.out.println("\nPlease choose the options");
+		System.out.println("1. Display file names");
+		System.out.println("2.File Operations sub menu");
+		System.out.println("3. Exit Application");
+	}
+	public static void SubMenu() {
+		System.out.println("\nPlease choose the options");
+		System.out.println("1. Add a file");
+		System.out.println("2.Delete a file");
+		System.out.println("3. Search a file");
+		System.out.println("4. Go to Main Menu");
+	}
+
+
+}
